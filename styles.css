@@ -535,7 +535,6 @@ ul { list-style: none; }
   display: flex; gap: 0.6rem;
 }
 
-/* LIVE button — green */
 .btn-live {
   display: inline-flex; align-items: center; gap: 0.4rem;
   background: var(--green);
@@ -550,7 +549,6 @@ ul { list-style: none; }
 .btn-live i { font-size: 0.5rem; }
 .btn-live:hover { opacity: 0.88; transform: translateY(-1px); }
 
-/* GITHUB button */
 .btn-repo {
   display: inline-flex; align-items: center; gap: 0.4rem;
   background: rgba(255,255,255,0.07);
