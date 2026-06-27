@@ -1,288 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mkhulu Nicholus Sithole - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mkhulu Sithole | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">MNS</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1>Hi, I'm <span>Mkhulu Nicholus Sithole</span></h1>
-                    <h2>Software Engineer</h2>
-                    <p>I'm doing my final year at Cape Peninsula University of Technology (CPUT) in Diploma: ICT in Application Development.</p>
-                    <p>🌱 Currently learning React.js and Spring Boot</p>
-                    
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="1000.jpg" alt="Mkhulu Nicholus Sithole" class="profile-img">
-                </div>
-            </div>
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">&lt;MN /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-            <div class="technologies">
-                <h2 class="section-title">Technologies & Tools</h2>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <i class="fab fa-java"></i>
-                        <span>Java</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-database"></i>
-                        <span>SQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="available-badge">
-                <i class="fas fa-check-circle"></i>
-                <span>Available for collaborations</span>
-            </div>
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">👋 Hello, I'm</p>
+      <h1 class="hero-name">Mkhulu Nicholus<br/><span class="accent">Sithole</span></h1>
+      <div class="hero-role">
+        <span class="bracket">&lt;</span>
+        <span id="typed-text"></span>
+        <span class="cursor">|</span>
+        <span class="bracket">/&gt;</span>
+      </div>
+      <p class="hero-desc">
+        Final-year Software Engineering student building scalable full-stack systems
+        with Java, Spring Boot, React &amp; cloud technologies.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/MkhuluSithole" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mkhulu-sithole" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:mkhulunicholus053@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">MkhuluSithole.java</span>
         </div>
-    </section>
+        <pre class="code-body"><code><span class="kw">public class</span> <span class="cls">MkhuluSithole</span> {
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="about-container">
-                <div class="about-content">
-                    <h2 class="section-title">About Me</h2>
-                    <p>I'm a passionate software engineering student currently in my final year at Cape Peninsula University of Technology (CPUT), pursuing a Diploma in ICT: Application Development.</p>
-                    
-                    <p>My journey in technology began with a curiosity about how software works and has evolved into a deep passion for creating solutions that make a difference. I'm particularly interested in full-stack development and the intersection between technology and user experience.</p>
-                    
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or mentoring fellow students.</p>
-                    
-                    <div class="education">
-                        <h3>Education</h3>
-                        <div class="education-item">
-                            <h4>Cape Peninsula University of Technology</h4>
-                            <p class="degree">Diploma in ICT: Application Development</p>
-                            <p class="date">2022 - Present (Final Year)</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skills-container">
-                    <h3>My Skills</h3>
-                    <div class="skill-category">
-                        <h4>Programming Languages</h4>
-                        <div class="skills-grid">
-                            <div class="skill-item">Java</div>
-                            <div class="skill-item">Python</div>
-                            <div class="skill-item">JavaScript</div>
-                            <div class="skill-item">HTML/CSS</div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>Frameworks & Libraries</h4>
-                        <div class="skills-grid">
-                            <div class="skill-item">React</div>
-                            <div class="skill-item">Node.js</div>
-                            <div class="skill-item">Express</div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>Tools & Technologies</h4>
-                        <div class="skills-grid">
-                            <div class="skill-item">Git</div>
-                            <div class="skill-item">MySQL</div>
-                            <div class="skill-item">IoT</div>
-                            <div class="skill-item">REST APIs</div>
-                        </div>
-                    </div>
-                </div>
+  <span class="kw">String</span> role = <span class="str">"Software Engineer"</span>;
+  <span class="kw">String</span> focus = <span class="str">"Full-Stack + Cloud"</span>;
+  <span class="kw">boolean</span> openToWork = <span class="bool">true</span>;
+
+  <span class="kw">String[]</span> stack = {
+    <span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>,
+    <span class="str">"React"</span>, <span class="str">"MySQL"</span>,
+    <span class="str">"Azure"</span>
+  };
+
+  <span class="kw">void</span> <span class="fn">build</span>() {
+    System.out.println(
+      <span class="str">"Solving real problems 🚀"</span>
+    );
+  }
+}</code></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <i class="fas fa-user-tie"></i>
             </div>
+          </div>
+          <div class="avatar-badge">
+            <i class="fas fa-map-marker-alt"></i> Cape Town, SA
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="projects-container">
-                <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">Here are some of the projects I've worked on during my studies</p>
-                
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250?text=Elegance+E-commerce" alt="Elegance E-commerce">
-                        </div>
-                        <div class="project-content">
-                            <h3>Elegance E-commerce</h3>
-                            <p>Front-end for an e-commerce website created in my 2nd year using HTML, CSS, and JavaScript.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://github.com/MkhuluSithole/Elegance.git" class="github-btn" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                                <a href="https://mkhulusithole.github.io/Elegance/" class="live-btn" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250?text=Healthcare+System" alt="Healthcare System">
-                        </div>
-                        <div class="project-content">
-                            <h3>Healthcare Booking System</h3>
-                            <p>A system that helps parents book doctor appointments for their children (In Progress).</p>
-                            <div class="project-tech">
-                                <span>React.js</span>
-                                <span>Python</span>
-                                <span>MySQL</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                In Progress <i class="fas fa-spinner"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x250?text=Campus+Food+Ordering" alt="Campus Food Ordering">
-                        </div>
-                        <div class="project-content">
-                            <h3>Campus Food Ordering System</h3>
-                            <p>An e-commerce system for university students and staff to order food (In Progress).</p>
-                            <div class="project-tech">
-                                <span>React.js</span>
-                                <span>Spring Boot</span>
-                                <span>MySQL</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                In Progress <i class="fas fa-spinner"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="about-text">
+          <p>
+            I'm a passionate software engineer currently in my final year of a
+            <strong>Diploma in ICT: Application Development</strong> at Cape Peninsula University of Technology.
+            I thrive at the intersection of clean backend architecture and intuitive front-end experiences.
+          </p>
+          <p>
+            My approach is rooted in <strong>object-oriented design</strong>, pragmatic problem-solving,
+            and continuous learning. Whether it's designing RESTful APIs, crafting reactive UIs,
+            or exploring cloud infrastructure. I bring energy and attention to detail to every build.
+          </p>
+          <p>
+            I'm actively pursuing the <strong>Microsoft Certified: Azure Administrator Associate</strong>
+            certification to deepen my cloud expertise, and I'm seeking my first full-time role
+            where I can contribute meaningfully from day one.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Year Building</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="section-subtitle">I'm currently looking for internship opportunities and collaborations. Feel free to reach out!</p>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:220104336@mycput.ac.za">220104336@mycput.ac.za</a>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/mkhulu-sithole" target="_blank">linkedin.com/in/mkhulu-sithole</a>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h3>GitHub</h3>
-                            <a href="https://github.com/MkhuluSithole" target="_blank">github.com/MkhuluSithole</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Technologies</span>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Mkhulu Nicholus Sithole. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/mkhulu-sithole" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:220104336@mycput.ac.za"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/MkhuluSithole" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Committed</span>
             </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ── SKILLS ── -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">Technical Toolkit</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Java</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <h3>Back-End</h3>
+          <div class="skill-tags">
+            <span>Spring Boot</span><span>Spring MVC</span><span>RESTful APIs</span><span>Maven</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h3>Front-End</h3>
+          <div class="skill-tags">
+            <span>React</span><span>React Hooks</span><span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>JDBC</span><span>JPA</span><span>ER Modelling</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+          <h3>Cloud &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>Microsoft Azure</span><span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span><span>IntelliJ</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h3>Concepts</h3>
+          <div class="skill-tags">
+            <span>OOP</span><span>MVC Architecture</span><span>Agile/Scrum</span><span>REST Principles</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-utensils"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/MkhuluSithole/my-fullstack-project.git" target="_blank" rel="noopener" class="btn-live">
+                <i class="fas fa-circle"></i> Live
+              </a>
+              <a href="https://github.com/MkhuluSithole/my-fullstack-project.git" target="_blank" rel="noopener" class="btn-repo">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Online Food Ordering System</h3>
+          <p class="project-period"><i class="fas fa-calendar-alt"></i> Jan 2025 – Oct 2025</p>
+          <p class="project-desc">
+            A full-stack e-commerce platform enabling users to browse, search, and purchase food online.
+            Features an admin panel for real-time inventory management, user authentication, and order tracking.
+          </p>
+          <ul class="project-highlights">
+            <li>Built a Spring Boot REST API for product listings, order processing &amp; stock updates</li>
+            <li>Developed a React front-end with dynamic filtering, shopping cart &amp; order history</li>
+            <li>Designed a normalised MySQL database with JPA/JDBC integration</li>
+            <li>Implemented input validation, error handling &amp; responsive design throughout</li>
+          </ul>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>JPA</span><span>REST API</span><span>Maven</span>
+          </div>
+        </div>
+
+        <!-- Project 2 — placeholder to show growth potential -->
+        <div class="project-card project-coming">
+          <div class="project-header">
+            <div class="project-icon"><i class="fab fa-microsoft"></i></div>
+          </div>
+          <h3 class="project-title">Azure Cloud Project <span class="badge-wip">Coming Soon</span></h3>
+          <p class="project-desc">
+            An upcoming cloud-based project leveraging Microsoft Azure services part of my
+            Azure Administrator Associate certification journey. Watch this space.
+          </p>
+          <div class="project-tech">
+            <span>Microsoft Azure</span><span>Cloud Architecture</span><span>Java</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section class="section section-dark" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Certifications</span>
+        <h2 class="section-title">Credentials &amp; Learning</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+          <div class="cert-info">
+            <h3>Microsoft Certified: Azure Administrator Associate</h3>
+            <p>In Progress — AZ-104 Certification Path</p>
+            <span class="cert-badge in-progress">In Progress</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-info">
+            <h3>Diploma in ICT: Application Development</h3>
+            <p>Cape Peninsula University of Technology — Final Year</p>
+            <span class="cert-badge in-progress">In Progress</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">I'm open to internship & full-time opportunities, collaborations, and conversations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:mkhulunicholus053@gmail.com">mkhulunicholus053@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/mkhulu-sithole" target="_blank" rel="noopener">linkedin.com/in/mkhulu-sithole</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/MkhuluSithole" target="_blank" rel="noopener">github.com/MkhuluSithole</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span>Cape Town, South Africa</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="off"/>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="off"/>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">&lt;MN /&gt;</span>
+      <p>Designed &amp; built by Mkhulu Nicholus Sithole · Cape Town, SA</p>
+      <div class="footer-socials">
+        <a href="https://github.com/MkhuluSithole" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mkhulu-sithole" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mkhulunicholus053@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
